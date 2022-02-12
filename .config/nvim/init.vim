@@ -4,6 +4,7 @@
 :set number
 :set relativenumber
 :set autoindent
+:set expandtab
 :set tabstop=2
 :set shiftwidth=2
 :set smarttab
@@ -15,6 +16,8 @@
 :set expandtab
 :set t_Co=256
 :set nowrap
+:set nobackup
+:set wildignore+=*/node_modules/*
 
 syntax on
 
@@ -100,9 +103,10 @@ let g:user_emmet_leader_key='<C-Z>'
 " ----------------------------------------------------------------------------------------
 
 noremap <F1> :NERDTreeToggle<CR>
-noremap <F8> :TagbarToggle<CR>
+noremap <F8> :Ag<CR>
 noremap <F5> :GFiles<CR>
 noremap <F6> :Buffers<CR>
+noremap <F7> :Marks<CR>
 noremap <F2> :bprevious!<CR>
 noremap <F3> :bnext!<CR>
 noremap <F4> :bdelete!<CR>
