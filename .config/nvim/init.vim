@@ -115,3 +115,22 @@ noremap <F10> :Prettier<CR>
 
 nnoremap <silent><A-j> :set paste<CR>m`o<Esc> " Insertar linea debajo de la actual
 nnoremap <silent><A-k> :set paste<CR>m`O<Esc> " Insertar linea arriba de la actual
+
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+noremap <PageUp> <Nop>
+noremap <PageDown> <Nop>
+
+"inoremap <Up> <Nop>
+"inoremap <Down> <Nop>
+"inoremap <Left> <Nop>
+"inoremap <Right> <Nop>
+"inoremap <PageUp> <Nop>
+"inoremap <PageDown> <Nop>
+
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
