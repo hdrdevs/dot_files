@@ -24,18 +24,16 @@ syntax on
 call plug#begin()
 
   Plug 'overcache/NeoSolarized'
-"	Plug 'tpope/vim-surround' 								"Sirve para modificar los caracteres de alrededor cs<{
-	Plug 'tpope/vim-commentary' 							"for commenting gcc & gc
+
+	Plug 'tpope/vim-commentary' 							"for commenting gc
+  Plug 'jiangmiao/auto-pairs'
 
 	Plug 'vim-airline/vim-airline'						"Barra de estado
 	Plug 'vim-airline/vim-airline-themes'			"Temas de la barra de estado
 
 	Plug 'preservim/nerdtree'									"File Explorer
 	Plug 'ryanoasis/vim-devicons'							"Iconos de Desarrollo
-"	Plug 'terryma/vim-multiple-cursors' 			"CTRL + N for multiple cursors
-"	Plug 'preservim/tagbar'										"Informacion del codigo <F8>
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}									"Autocompletado
-"  Plug 'sheerun/vim-polyglot'
 	Plug 'mxw/vim-jsx'												"Resaltado de sintaxis para React
 	Plug 'hdrdevs/vim-javascript'
 	Plug 'mhinz/vim-startify'									"Pantalla inicial con acceso a los archivos recientes
@@ -57,6 +55,7 @@ call plug#end()
 colorscheme NeoSolarized
 
 hi Normal guibg=NONE ctermbg=NONE
+
 
 " Prettier Configuration
 " ----------------------------------------------------------------------------------------

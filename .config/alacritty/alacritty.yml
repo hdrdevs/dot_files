@@ -5,10 +5,10 @@ shell:
     - -c
     - "tmux"
 window:
-  opacity: 0.97
+  opacity: 0.8
   dimensions:
     columns: 80 #Width(The unit is DPI)
-    lines: 37 #Vertical width
+    lines: 50 #Vertical width
 font:
   normal:
     family: DroidSansMono Nerd Font
@@ -16,7 +16,6 @@ font:
 
   bold:
     family: DroidSansMono Nerd Font
-    style: Regular
     style: Bold
 
   italic:
@@ -27,7 +26,7 @@ font:
     family: DroidSansMono Nerd Font
     style: Bold Italic
 
-  size: 13
+  size: 11
   
 # Colors (Gruvbox dark)
 colors:
