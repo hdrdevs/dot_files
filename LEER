@@ -1,0 +1,11 @@
+IMPORTANTE!!!
+
+El archivo gruvbox_dark modifica la paleta de colores de la terminal TTY
+de Linux. Y no es la terminal del entorno gráfico sino la terminal pura,
+es decir, sin iniciar ningun servidor X.
+
+Para configurar la fuente de la consola!!!
+sudo dpkg-reconfigure console-setup
+
+Para cursor block
+echo -e '\033[?6c'
