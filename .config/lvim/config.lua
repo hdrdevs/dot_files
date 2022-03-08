@@ -12,7 +12,8 @@ an executable
 lvim.log.level = "warn"
 lvim.format_on_save = true
 --lvim.colorscheme = "onedarker"
-lvim.colorscheme = "gruvbox"
+--lvim.colorscheme = "gruvbox"
+lvim.colorscheme = "NeoSolarized"
 
 
 -- personal
@@ -23,6 +24,7 @@ vim.opt.showtabline = 2
 vim.opt.relativenumber = true
 vim.opt.colorcolumn = "80"
 vim.opt.guicursor = "i:block"
+vim.opt.termguicolors = true 
 
 function Mapear(mode, key, action)
     vim.api.nvim_set_keymap(mode, key, action, {
@@ -95,11 +97,11 @@ lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 lvim.builtin.nvimtree.show_icons.git = 0
 
--- if you don't want all the parsers change this to a table of the ones you want
+-- if you don't want all the parsers change this to a table of the ones you wan
+-- NO INCLUYO EN LA LISTA A JAVASCRIPT YA QUE EL RESALTADO LO HACE EL PLUGIN VIM-JAVASCRIPT
 lvim.builtin.treesitter.ensure_installed = {
   "bash",
   "c",
-  "javascript",
   "json",
   "lua",
   "python",
@@ -181,7 +183,9 @@ lvim.builtin.treesitter.highlight.enabled = true
 -- }
 lvim.plugins = {
     {"lukas-reineke/indent-blankline.nvim"},
-    {"morhetz/gruvbox"}
+    {"morhetz/gruvbox"},
+    {"hdrdevs/NeoSolarized"},
+    {'hdrdevs/vim-javascript'}
 }
 
 require("indent_blankline").setup {

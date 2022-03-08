@@ -8,6 +8,7 @@
 :set tabstop=4
 :set shiftwidth=4
 :set softtabstop=4
+:set colorcolumn=80
 :set smarttab
 :set mouse=a
 :set encoding=UTF-8
@@ -23,7 +24,7 @@ syntax on
 
 call plug#begin()
 
-  Plug 'overcache/NeoSolarized'
+    Plug 'overcache/NeoSolarized'
 
 	Plug 'tpope/vim-commentary' 							"for commenting gc
     Plug 'jiangmiao/auto-pairs'
