@@ -80,7 +80,7 @@ typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions colorize)
+plugins=(git zsh-autosuggestions colorize composer jsontools react-native yarn zsh-interactive-cd)
 
 source $ZSH/oh-my-zsh.sh
 

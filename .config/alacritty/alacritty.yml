@@ -1,13 +1,14 @@
-shell:
-  program: /bin/zsh
-  args:
-    - -l
-    - -c
-    - "tmux"
+#shell:
+#  program: /bin/zsh
+#  args:
+#    - -l
+#    - -c
+#    - "tmux"
+    
 window:
-  opacity: 0.8
+  opacity: 0.97
   dimensions:
-    columns: 80 #Width(The unit is DPI)
+    columns: 102 #Width(The unit is DPI)
     lines: 50 #Vertical width
 font:
   normal:

@@ -5,10 +5,10 @@
 :set relativenumber
 :set autoindent
 :set expandtab
-:set tabstop=2
-:set shiftwidth=2
+:set tabstop=4
+:set shiftwidth=4
+:set softtabstop=4
 :set smarttab
-:set softtabstop=2
 :set mouse=a
 :set encoding=UTF-8
 :set cursorline
@@ -26,7 +26,8 @@ call plug#begin()
   Plug 'overcache/NeoSolarized'
 
 	Plug 'tpope/vim-commentary' 							"for commenting gc
-  Plug 'jiangmiao/auto-pairs'
+    Plug 'jiangmiao/auto-pairs'
+    Plug 'lukas-reineke/indent-blankline.nvim'
 
 	Plug 'vim-airline/vim-airline'						"Barra de estado
 	Plug 'vim-airline/vim-airline-themes'			"Temas de la barra de estado
